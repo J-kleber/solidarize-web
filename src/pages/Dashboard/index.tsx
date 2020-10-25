@@ -1,9 +1,4 @@
-import React, { useState, useCallback, useEffect, useMemo } from 'react';
-import DayPicker, { DayModifiers } from 'react-day-picker';
-import 'react-day-picker/lib/style.css';
-import { isToday, format, parseISO, isAfter } from 'date-fns';
-import ptBR from 'date-fns/locale/pt-BR';
-import { Link } from 'react-router-dom';
+import React, { useState, useCallback, useEffect } from 'react';
 import { FiPower, FiPlay, FiPause } from 'react-icons/fi';
 
 import {
