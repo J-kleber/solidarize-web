@@ -60,13 +60,14 @@ const Dashboard: React.FC = () => {
 
   useEffect(() => {
     if (play) {
-      const teste = setInterval(() => {
+      const timerInterval = setInterval(() => {
         setCurrentFeature(oldState => (oldState < 12 ? oldState + 1 : 0));
       }, 1500);
-      setTimer(teste);
+      setTimer(timerInterval);
     } else if (timer) {
       clearInterval(timer);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [play]);
 
   const handleCurrentFeature = useCallback((index: number) => {

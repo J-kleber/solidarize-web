@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Route as ReactDomRoute,
   RouteProps as ReactDOMRouteProps,
-  Redirect,
 } from 'react-router-dom';
 
 interface RouteProps extends ReactDOMRouteProps {
