@@ -1,5 +1,20 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { FiPower, FiPlay, FiPause } from 'react-icons/fi';
+import {
+  FiPlay,
+  FiPause,
+  FiLogIn,
+  FiClipboard,
+  FiHome,
+  FiList,
+  FiMap,
+  FiPlusSquare,
+  FiUser,
+  FiUserPlus,
+  FiGift,
+  FiPrinter,
+  FiTrello,
+  FiDollarSign,
+} from 'react-icons/fi';
 
 import {
   Container,
@@ -149,7 +164,7 @@ const Dashboard: React.FC = () => {
               >
                 Login
                 <span>
-                  <FiPower size={22} />
+                  <FiLogIn size={22} />
                 </span>
               </button>
               <button
@@ -159,7 +174,7 @@ const Dashboard: React.FC = () => {
               >
                 Cadastro
                 <span>
-                  <FiPower size={22} />
+                  <FiClipboard size={22} />
                 </span>
               </button>
               <button
@@ -169,7 +184,7 @@ const Dashboard: React.FC = () => {
               >
                 Dashboard
                 <span>
-                  <FiPower size={22} />
+                  <FiHome size={22} />
                 </span>
               </button>
               <button
@@ -179,7 +194,7 @@ const Dashboard: React.FC = () => {
               >
                 Feed
                 <span>
-                  <FiPower size={22} />
+                  <FiList size={22} />
                 </span>
               </button>
               <button
@@ -189,7 +204,7 @@ const Dashboard: React.FC = () => {
               >
                 Geolocalização
                 <span>
-                  <FiPower size={22} />
+                  <FiMap size={22} />
                 </span>
               </button>
               <button
@@ -199,7 +214,7 @@ const Dashboard: React.FC = () => {
               >
                 Cadastre uma campanha
                 <span>
-                  <FiPower size={22} />
+                  <FiPlusSquare size={22} />
                 </span>
               </button>
             </div>
@@ -214,7 +229,7 @@ const Dashboard: React.FC = () => {
                 onClick={() => handleCurrentFeature(7)}
               >
                 <span>
-                  <FiPower size={22} />
+                  <FiTrello size={22} />
                 </span>
                 Detalhes
               </button>
@@ -224,7 +239,7 @@ const Dashboard: React.FC = () => {
                 onClick={() => handleCurrentFeature(8)}
               >
                 <span>
-                  <FiPower size={22} />
+                  <FiUser size={22} />
                 </span>
                 Perfil
               </button>
@@ -234,7 +249,7 @@ const Dashboard: React.FC = () => {
                 onClick={() => handleCurrentFeature(9)}
               >
                 <span>
-                  <FiPower size={22} />
+                  <FiUserPlus size={22} />
                 </span>
                 Personalize seu perfil
               </button>
@@ -244,7 +259,7 @@ const Dashboard: React.FC = () => {
                 onClick={() => handleCurrentFeature(10)}
               >
                 <span>
-                  <FiPower size={22} />
+                  <FiDollarSign size={22} />
                 </span>
                 Conta para receber doação
               </button>
@@ -254,7 +269,7 @@ const Dashboard: React.FC = () => {
                 onClick={() => handleCurrentFeature(11)}
               >
                 <span>
-                  <FiPower size={22} />
+                  <FiGift size={22} />
                 </span>
                 Realizar doação
               </button>
@@ -264,7 +279,7 @@ const Dashboard: React.FC = () => {
                 onClick={() => handleCurrentFeature(12)}
               >
                 <span>
-                  <FiPower size={22} />
+                  <FiPrinter size={22} />
                 </span>
                 Relatórios
               </button>

@@ -461,6 +461,5 @@ export const Footer = styled.footer`
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-family: 'Montez', cursive;
   }
 `;
