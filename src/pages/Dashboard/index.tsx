@@ -118,12 +118,19 @@ const Dashboard: React.FC = () => {
       <ProjectContent id="project">
         <h2>O Projeto</h2>
         <p>
-          O Solidarize é um aplicativo para elaboração de campanhas de cunho
-          social, onde instituições e pessoas poderão expor suas necessidades
-          para que outras pessoas possam ajudar com doações, trabalho voluntário
-          ou qualquer outra forma que desejarem. O aplicativo tem como principal
-          objetivo unir as pessoas em prol de causas sociais fomentando a
-          solidariedade.
+          Solidarize é um aplicativo desenvolvido com a ideia de promover o
+          encontro e união de pessoas, ONG’s (Organizações não Governamentais),
+          instituições públicas e privadas, que se proponham a ajudar a
+          sociedade promovendo ações sociais em prol das comunidades carentes e
+          doações sem visar ganhos próprios. Reforçando sempre que puder nas
+          campanhas a independência financeira dos mais desfavorecidos através
+          de folders, fomentando palestras e cursos voluntários para área
+          profissional aos idealizadores e apoiadores na tela principal do
+          aplicativo. Além de doações e ações sociais, este aplicativo funciona
+          como um ponto de encontro entre os idealizadores das campanhas
+          servindo de vitrine para apoiadores e ajudados funcionando de forma
+          semelhante a uma rede social voltada para o encontro de doadores e
+          donatários.
         </p>
       </ProjectContent>
       <MembersContainer id="team">
