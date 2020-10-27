@@ -118,13 +118,12 @@ const Dashboard: React.FC = () => {
       <ProjectContent id="project">
         <h2>O Projeto</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-          voluptatibus nostrum labore asperiores nesciunt corrupti veniam, dolor
-          quas dignissimos dolorem placeat possimus rem. Alias est doloremque
-          amet nesciunt ab vero. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Inventore, voluptatibus nostrum labore asperiores
-          nesciunt corrupti veniam, dolor quas dignissimos dolorem placeat
-          possimus rem. Alias est doloremque amet nesciunt ab vero.
+          O Solidarize é um aplicativo para elaboração de campanhas de cunho
+          social, onde instituições e pessoas poderão expor suas necessidades
+          para que outras pessoas possam ajudar com doações, trabalho voluntário
+          ou qualquer outra forma que desejarem. O aplicativo tem como principal
+          objetivo unir as pessoas em prol de causas sociais fomentando a
+          solidariedade.
         </p>
       </ProjectContent>
       <MembersContainer id="team">
