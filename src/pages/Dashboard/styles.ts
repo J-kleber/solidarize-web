@@ -28,10 +28,10 @@ export const Header = styled.header`
 
 export const HeaderContent = styled.div`
   margin: 0 auto;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   max-width: 1200px;
-  div {
+  > div:first-child {
     > img {
       width: 120px;
     }
@@ -39,6 +39,10 @@ export const HeaderContent = styled.div`
       text-align: center;
       font-weight: 400;
     }
+    justify-content: center;
+    flex: 1;
+    display: flex;
+    margin-bottom: 30px;
   }
 
   button {
@@ -57,7 +61,9 @@ export const HeaderContent = styled.div`
     display: block;
     max-width: auto;
 
-    div {
+    > div:first-child {
+      margin-bottom: 0px;
+
       > img {
         display: flex;
         margin: auto;
@@ -144,7 +150,7 @@ export const AppPresentationTextContainer = styled.div`
 
   flex-direction: column;
   align-self: center;
-  line-height: 110px;
+  line-height: 80px;
   p {
     font-family: 'Fredoka One', cursive;
     font-size: 50px;
