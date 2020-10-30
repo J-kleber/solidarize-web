@@ -5,7 +5,7 @@ export const Container = styled.div``;
 export const Header = styled.header`
   padding: 10px 0px 32px 0px;
   background-image: linear-gradient(to right, #1b3d5e 100%, #1f476d 53%);
-  height: 670px;
+  height: 780px;
   position: relative;
 
   img.phone-hand {
@@ -150,7 +150,7 @@ export const AppPresentationTextContainer = styled.div`
 
   flex-direction: column;
   align-self: center;
-  line-height: 80px;
+  line-height: 150px;
   p {
     font-family: 'Fredoka One', cursive;
     font-size: 50px;
@@ -222,7 +222,7 @@ export const FeaturesContainer = styled.div`
   }
 
   h2.h2-tecnologies {
-    margin-top: 80px;
+    margin-top: 20px;
   }
 
   > button {
@@ -507,17 +507,24 @@ export const MemberCard = styled.div`
 `;
 
 export const Technologies = styled.div`
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 16px;
-  row-gap: 30px;
+  display: block !important;
+  margin-top: 80px;
+  div {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    row-gap: 30px;
 
-  img {
-    width: 125px !important;
-    margin-bottom: 0px !important;
+    img {
+      width: 125px !important;
+      margin-bottom: 0px !important;
+    }
   }
+
   @media (max-width: 720px) {
-    grid-template-columns: repeat(2, 1fr);
+    div {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 `;
 

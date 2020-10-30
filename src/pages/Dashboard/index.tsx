@@ -130,6 +130,7 @@ const Dashboard: React.FC = () => {
               <a href="#project">Projeto</a>
               <a href="#team">Equipe</a>
               <a href="#functionalities">Funcionalidades</a>
+              <a href="#tecnologies">Tecnologias</a>
             </div>
           </Menu>
         </HeaderContent>
@@ -375,16 +376,18 @@ const Dashboard: React.FC = () => {
             <FiPlay size={30} color="#1b5e5e" />
           )}
         </button>
-        <h2 className="h2-tecnologies">Tecnologias</h2>
-        <Technologies className="tecnologies">
-          <img src={reactNative} alt="react-native" />
-          <img src={node} alt="Node-JS" />
-          <img src={mysql} alt="MySql" />
-          <img src={firebase} alt="Firebase" />
-          <img src={typescript} alt="Typescript" />
-          <img src={wirecard} alt="Wirecard" />
-          <img src={maps} alt="Google maps" />
-          <img src={bitbucket} alt="Bitbucket" />
+        <Technologies id="tecnologies">
+          <h2 className="h2-tecnologies">Tecnologias</h2>
+          <div>
+            <img src={reactNative} alt="react-native" />
+            <img src={node} alt="Node-JS" />
+            <img src={mysql} alt="MySql" />
+            <img src={firebase} alt="Firebase" />
+            <img src={typescript} alt="Typescript" />
+            <img src={wirecard} alt="Wirecard" />
+            <img src={maps} alt="Google maps" />
+            <img src={bitbucket} alt="Bitbucket" />
+          </div>
         </Technologies>
       </FeaturesContainer>
       <Footer>
