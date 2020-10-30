@@ -174,7 +174,12 @@ const Dashboard: React.FC = () => {
                 rel="noopener noreferrer"
                 className="linkedin"
               >
-                <img src={linkedin} width={50} height={50} />
+                <img
+                  src={linkedin}
+                  width={50}
+                  height={50}
+                  alt="john-linkedin"
+                />
               </a>
             </div>
             <p>Desenvolvedor Back-end</p>
@@ -193,7 +198,12 @@ const Dashboard: React.FC = () => {
                 rel="noopener noreferrer"
                 className="linkedin"
               >
-                <img src={linkedin} width={50} height={50} />
+                <img
+                  src={linkedin}
+                  width={50}
+                  height={50}
+                  alt="wellington-linkedin"
+                />
               </a>
             </div>
             <p>Desenvolvedor Front-end</p>
@@ -208,7 +218,12 @@ const Dashboard: React.FC = () => {
                 rel="noopener noreferrer"
                 className="linkedin"
               >
-                <img src={linkedin} width={50} height={50} />
+                <img
+                  src={linkedin}
+                  width={50}
+                  height={50}
+                  alt="willian-linkedin"
+                />
               </a>
             </div>
             <p>Documentação e processos</p>
@@ -227,7 +242,12 @@ const Dashboard: React.FC = () => {
                 rel="noopener noreferrer"
                 className="linkedin"
               >
-                <img src={linkedin} width={50} height={50} />
+                <img
+                  src={linkedin}
+                  width={50}
+                  height={50}
+                  alt="thajinara-linkedin"
+                />
               </a>
             </div>
             <p>Orientadora</p>
