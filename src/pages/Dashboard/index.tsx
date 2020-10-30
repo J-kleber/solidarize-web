@@ -28,6 +28,7 @@ import {
   FeaturesRightColumn,
   MembersContainer,
   MemberCard,
+  Technologies,
   Footer,
   ProjectContent,
 } from './styles';
@@ -53,6 +54,17 @@ import john from '../../assets/john.jpg';
 import will from '../../assets/will.jpg';
 import well from '../../assets/well.jpg';
 
+import bitbucket from '../../assets/tecnologias/bitbucket.svg';
+import firebase from '../../assets/tecnologias/firebase.svg';
+import maps from '../../assets/tecnologias/maps.svg';
+import mysql from '../../assets/tecnologias/mysql.svg';
+import node from '../../assets/tecnologias/node.svg';
+import reactNative from '../../assets/tecnologias/react-native.svg';
+import typescript from '../../assets/tecnologias/typescript.svg';
+import wirecard from '../../assets/tecnologias/wirecard.svg';
+
+import linkedin from '../../assets/linkedin.svg';
+
 const Dashboard: React.FC = () => {
   const imagesFeatures = [
     initial,
@@ -68,6 +80,21 @@ const Dashboard: React.FC = () => {
     dadosConta, // Conta para receber doação
     realizarDoacao, // Realize doacoes
     relatorio, // Relatórios
+  ];
+  const description = [
+    '',
+    'Faça login com seu e-mail e senha ou utilize sua conta do google',
+    'Cadastre-se de forma rápida e fácil',
+    'Acompanhe a publicação de campanhas separadas por categorias',
+    'Se preferir abra o feed com detalhes das campanhas',
+    'Encontre instituições e pessoas com campanhas perto de você',
+    'Cadastre e promova uma campanha',
+    'Acompanhe a evolução de uma campanha',
+    'Veja o perfil das instituições e de outras pessoas',
+    'Personalize seu perfil e ganhe confiaça dos doadores',
+    'Crie uma conta para receber doações diretamente na sua conta bancária',
+    'Realize doações de forma fácil',
+    'Acompanhe suas doações',
   ];
   const [currentFeature, setCurrentFeature] = useState(0);
   const [play, setPlay] = useState(true);
@@ -138,28 +165,77 @@ const Dashboard: React.FC = () => {
         <div>
           <MemberCard>
             <h3>John Kleber</h3>
-            <img src={john} alt="John Kleber" />
+            <div className="social-profile">
+              <img src={john} className="profile-picture" alt="John Kleber" />
+              <a
+                href="https://www.linkedin.com/in/john-kleber/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="linkedin"
+              >
+                <img src={linkedin} width={50} height={50} />
+              </a>
+            </div>
             <p>Desenvolvedor Back-end</p>
           </MemberCard>
           <MemberCard>
             <h3>Wellington Gomes</h3>
-            <img src={well} alt="Wellington Gomes" />
+            <div className="social-profile">
+              <img
+                src={well}
+                className="profile-picture"
+                alt="Wellington Gomes"
+              />
+              <a
+                href="https://www.linkedin.com/in/wellington-gomes-graciani/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="linkedin"
+              >
+                <img src={linkedin} width={50} height={50} />
+              </a>
+            </div>
             <p>Desenvolvedor Front-end</p>
           </MemberCard>
           <MemberCard>
             <h3>Willian Gomes</h3>
-            <img src={will} alt="Willian Gomes" />
+            <div className="social-profile">
+              <img src={will} className="profile-picture" alt="Willian Gomes" />
+              <a
+                href="https://www.linkedin.com/in/willian-gomes-graciani-b920506b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="linkedin"
+              >
+                <img src={linkedin} width={50} height={50} />
+              </a>
+            </div>
             <p>Documentação e processos</p>
           </MemberCard>
           <MemberCard>
             <h3>Thajinara Kemy</h3>
-            <img src={thaji} alt="Thajinara Kemy" />
+            <div className="social-profile">
+              <img
+                src={thaji}
+                className="profile-picture"
+                alt="Thajinara Kemy"
+              />
+              <a
+                href="https://www.linkedin.com/in/thajinara-kemy-ueda-da-mata/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="linkedin"
+              >
+                <img src={linkedin} width={50} height={50} />
+              </a>
+            </div>
             <p>Orientadora</p>
           </MemberCard>
         </div>
       </MembersContainer>
       <FeaturesContainer id="functionalities">
         <h2>Funcionalidades</h2>
+        <span className="description">{description[currentFeature]}</span>
         <div>
           <FeaturesLeftColumn>
             <div>
@@ -267,7 +343,7 @@ const Dashboard: React.FC = () => {
                 <span>
                   <FiDollarSign size={22} />
                 </span>
-                Conta para receber doação
+                Receber doação
               </button>
               <button
                 type="button"
@@ -299,6 +375,17 @@ const Dashboard: React.FC = () => {
             <FiPlay size={30} color="#1b5e5e" />
           )}
         </button>
+        <h2 className="h2-tecnologies">Tecnologias</h2>
+        <Technologies className="tecnologies">
+          <img src={reactNative} alt="react-native" />
+          <img src={node} alt="Node-JS" />
+          <img src={mysql} alt="MySql" />
+          <img src={firebase} alt="Firebase" />
+          <img src={typescript} alt="Typescript" />
+          <img src={wirecard} alt="Wirecard" />
+          <img src={maps} alt="Google maps" />
+          <img src={bitbucket} alt="Bitbucket" />
+        </Technologies>
       </FeaturesContainer>
       <Footer>
         <img src={logoImg} alt="Solidarize" />

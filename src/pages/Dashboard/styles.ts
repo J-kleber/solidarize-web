@@ -194,6 +194,16 @@ export const FeaturesContainer = styled.div`
   justify-content: center;
   flex: 1;
   border-radius: 15px;
+
+  span.description {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    color: #1b3d5e;
+    margin-bottom: 10px;
+    height: 38px;
+  }
+
   div {
     display: flex;
     img {
@@ -211,6 +221,10 @@ export const FeaturesContainer = styled.div`
     color: #1b3d5e;
   }
 
+  h2.h2-tecnologies {
+    margin-top: 80px;
+  }
+
   > button {
     margin: auto;
     margin-top: 20px;
@@ -219,7 +233,7 @@ export const FeaturesContainer = styled.div`
     background-color: transparent;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 945px) {
     div {
       flex-direction: column;
     }
@@ -276,7 +290,7 @@ export const FeaturesLeftColumn = styled.div`
     }
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 945px) {
     padding: 10px;
     div {
       display: flex;
@@ -354,7 +368,7 @@ export const FeaturesRightColumn = styled.div`
     }
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 945px) {
     padding: 10px;
     div {
       display: flex;
@@ -415,6 +429,7 @@ export const MemberCard = styled.div`
   margin: 20px 10px 20px 10px;
   border-radius: 10px;
   padding: 10px;
+  position: relative;
 
   h3 {
     color: #ffffff;
@@ -430,22 +445,79 @@ export const MemberCard = styled.div`
     margin-top: 20px;
   }
 
+  div.social-profile {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
   img {
-    width: 150px;
-    border-radius: 50%;
     margin: auto;
     display: block;
+  }
+
+  img.profile-picture {
+    width: 150px;
+    border-radius: 50%;
     border: 5px solid;
+  }
+
+  a.linkedin {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+  }
+
+  a img {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 1065px) {
+    p {
+      height: 38px;
+    }
+  }
+
+  @media (max-width: 935px) {
+    h3 {
+      height: 48px;
+    }
+    a.linkedin {
+      right: 20px;
+      bottom: -10px;
+    }
   }
 
   @media (max-width: 720px) {
     h3 {
       font-size: 30px;
+      height: auto;
     }
 
     p {
       font-size: 26px;
+      height: auto;
     }
+
+    a.linkedin {
+      right: 40px;
+      bottom: -5px;
+    }
+  }
+`;
+
+export const Technologies = styled.div`
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+  row-gap: 30px;
+
+  img {
+    width: 125px !important;
+    margin-bottom: 0px !important;
+  }
+  @media (max-width: 720px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 
