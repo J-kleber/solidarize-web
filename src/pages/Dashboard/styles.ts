@@ -460,6 +460,8 @@ export const MemberCard = styled.div`
     width: 150px;
     border-radius: 50%;
     border: 5px solid;
+    height: 150px;
+    object-fit: cover;
   }
 
   a.linkedin {
